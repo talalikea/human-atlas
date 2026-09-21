@@ -55,6 +55,8 @@ The repository includes browser-ready geometry. Rebuilding it is optional: obtai
 
 ## Deploy
 
+For Netlify, import this repository with the base directory set to the repository root. The included `netlify.toml` configures Node.js 22, `npm run build`, and the `dist` publish directory. For a manual drag-and-drop deployment, run `npm ci` and `npm run build`, then upload the `dist` folder (which contains `index.html`), not the repository folder.
+
 Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
 
 ## License
